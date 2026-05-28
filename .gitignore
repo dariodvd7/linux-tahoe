@@ -1,0 +1,8 @@
+build/cache/
+build/chroot/
+build/binary/
+build/.build/
+build/live-image*.iso
+build/build.log
+build/*.iso
+*.iso

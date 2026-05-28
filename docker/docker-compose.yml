@@ -1,0 +1,12 @@
+services:
+  linux-tahoe-builder:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: linux-tahoe-builder
+    container_name: linux-tahoe-builder
+    volumes:
+      - /Users/dariorodriguez/Proyectos/linux-tahoe/build:/build
+    privileged: true
+    stdin_open: true
+    tty: true

@@ -1,0 +1,16 @@
+linux-image-amd64
+linux-headers-amd64
+firmware-linux
+firmware-linux-nonfree
+grub-efi-amd64
+efibootmgr
+network-manager
+sudo
+curl
+wget
+git
+pipewire
+pipewire-pulse
+wireplumber
+live-boot
+live-config

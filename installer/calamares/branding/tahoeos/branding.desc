@@ -1,0 +1,8 @@
+---
+componentName: tahoeos
+strings:
+    productName: "Linux Tahoe"
+    shortProductName: "Linux Tahoe"
+    version: "1.0"
+    shortVersionedName: "1.0"
+    bootloaderEntryName: "Linux Tahoe"
