@@ -5,13 +5,9 @@ services:
       dockerfile: Dockerfile
     platform: linux/amd64
     image: linux-tahoe-builder:latest
-    pull_policy: never
     container_name: linux-tahoe-builder
     volumes:
       - tahoe-build:/build
     privileged: true
-    stdin_open: true
-    tty: true
-
 volumes:
   tahoe-build:

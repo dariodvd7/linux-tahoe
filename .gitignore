@@ -2,7 +2,13 @@ build/cache/
 build/chroot/
 build/binary/
 build/.build/
-build/live-image*.iso
-build/build.log
 build/*.iso
+build/*.iso.zsync
+build/*.files
+build/*.contents
+build/*.packages
+build/*.packages.install
+build/*.packages.live
+build/build.log
+build/binary.modified_timestamps
 *.iso

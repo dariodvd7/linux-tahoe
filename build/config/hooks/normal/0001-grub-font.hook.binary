@@ -1,0 +1,7 @@
+#!/bin/sh
+set -e
+mkdir -p binary/boot/grub/fonts
+if [ -f chroot/usr/share/grub/unicode.pf2 ]; then
+    cp chroot/usr/share/grub/unicode.pf2 binary/boot/grub/fonts/unicode.pf2
+    cp chroot/usr/share/grub/unicode.pf2 binary/boot/grub/unicode.pf2
+fi

@@ -1,0 +1,15 @@
+#!/bin/sh
+set -e
+# Mac Mini 2012 busca el bootloader en /EFI/BOOT/BOOTX64.EFI
+# live-build lo pone en /EFI/debian/grubx64.efi — crear copia en ruta estándar
+mkdir -p binary/EFI/BOOT
+if [ -f binary/EFI/debian/grubx64.efi ]; then
+    cp binary/EFI/debian/grubx64.efi binary/EFI/BOOT/BOOTX64.EFI
+    echo "Apple EFI: BOOTX64.EFI copiado OK"
+elif [ -f binary/EFI/boot/bootx64.efi ]; then
+    cp binary/EFI/boot/bootx64.efi binary/EFI/BOOT/BOOTX64.EFI
+    echo "Apple EFI: BOOTX64.EFI copiado desde boot/ OK"
+else
+    echo "WARN: no se encontró grubx64.efi para copiar"
+    find binary/EFI/ -name "*.efi" 2>/dev/null
+fi

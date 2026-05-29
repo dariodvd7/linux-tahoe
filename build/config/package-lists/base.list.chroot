@@ -3,6 +3,7 @@ linux-headers-amd64
 firmware-linux
 firmware-linux-nonfree
 grub-efi-amd64
+grub-common
 efibootmgr
 network-manager
 sudo
